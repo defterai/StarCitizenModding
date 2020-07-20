@@ -15,4 +15,4 @@
 
 Для установки и обновления скачанной локализации вы можете использовать напрямую git и Python скрипты
 Подробнее о этом методе установки вы можете узнать из инструкции по ссылке:  
-https://github.com/defterai/StarCitizenModding
+* https://github.com/defterai/StarCitizenModding
