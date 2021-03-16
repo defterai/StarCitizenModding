@@ -1,0 +1,86 @@
+name: Export SmartCAT
+
+on:
+  workflow_dispatch:
+    inputs:
+      version: 
+        description: 'Localization version'
+        required: true
+      refBranch:
+        description: 'Reference branch'
+        default: 'original/3_12_1'
+        required: true
+      commitMsg:
+        description: 'Commit message'
+        default: 'Translation drop'
+        required: true
+      dropBranch:
+        description: 'Commit branch'
+        default: 'feature/translation_drop'
+        required: true
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    
+    env:
+      Language_Id: 25
+      Language_Name: russian
+      Global_Ini_Id: a8608333a55c031f04d4c821
+      Names_Ini_Id: dc2f4214f15c03b657e2b137
+
+    steps:
+    - name: Configure git settings
+      run: |
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git config --global core.autocrlf false
+        git config --global core.filemode false
+    
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Create drop branch
+      run: git checkout -b ${{ github.event.inputs.dropBranch }}
+    
+    - name: Export SmartCAT global.ini
+      uses: defterai/smartcat-export@master
+      with:
+        account_id: ${{ secrets.SMARTCAT_ACCOUNT_ID }}
+        auth_key: ${{ secrets.SMARTCAT_API_KEY }}
+        document_id: ${{ env.Global_Ini_Id }}
+        language_id: ${{ env.Language_Id }}
+        filename: global.ini.xlsx
+
+    - name: Export SmartCAT names.ini
+      uses: defterai/smartcat-export@master
+      with:
+        account_id: ${{ secrets.SMARTCAT_ACCOUNT_ID }}
+        auth_key: ${{ secrets.SMARTCAT_API_KEY }}
+        document_id: ${{ env.Names_Ini_Id }}
+        language_id: ${{ env.Language_Id }}
+        filename: names.ini.xlsx
+
+    - name: Download reference ini
+      run: wget https://raw.githubusercontent.com/defterai/StarCitizenModding/${{ github.event.inputs.refBranch }}/data/Localization/english/global.ini -O global_ref.ini 
+
+    - name: Merge with latest version
+      uses: defterai/sc-localization-merge@master
+      with:
+        documents: global.ini names.ini
+        reference: global_ref.ini
+        version: ${{ github.event.inputs.version }}
+
+    - name: Replace localization file
+      run: mv -f global.ini ./data/Localization/${{ env.Language_Name }}/
+
+    - name: Commit changes
+      run: |
+        git status
+        git commit -am "${{ github.event.inputs.commitMsg }}"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: ${{ github.event.inputs.dropBranch }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
