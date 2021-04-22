@@ -8,7 +8,7 @@ on:
         required: true
       refBranch:
         description: 'Reference branch'
-        default: 'original/3_12_1'
+        default: 'original/3_13_0'
         required: true
       commitMsg:
         description: 'Commit message'

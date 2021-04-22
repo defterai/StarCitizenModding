@@ -8,11 +8,11 @@ on:
         required: true
       gameVersion:
         description: 'Game version'
-        default: '3.12.1'
+        default: '3.13.0'
         required: true
       preRelease:
         description: 'Pre-Release'
-        default: true
+        default: false
         required: true
 
 jobs:
