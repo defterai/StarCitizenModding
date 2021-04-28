@@ -26,8 +26,8 @@ jobs:
     env:
       Language_Id: 25
       Language_Name: russian
-      Global_Ini_Id: a8608333a55c031f04d4c821
-      Names_Ini_Id: dc2f4214f15c03b657e2b137
+      Global_Ini_Id: b188c2fee3c083d7707159e2
+      Names_Ini_Id: 8bc26b35e3c083b115fb5b66
 
     steps:
     - name: Configure git settings
