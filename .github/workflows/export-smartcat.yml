@@ -8,7 +8,7 @@ on:
         required: true
       refBranch:
         description: 'Reference branch'
-        default: 'original/3_13_0'
+        default: 'original/3_13_1'
         required: true
       commitMsg:
         description: 'Commit message'
@@ -26,7 +26,7 @@ jobs:
     env:
       Language_Id: 25
       Language_Name: russian
-      Global_Ini_Id: b188c2fee3c083d7707159e2
+      Global_Ini_Id: a19606700b5283084f52f50b
       Names_Ini_Id: 8bc26b35e3c083b115fb5b66
 
     steps:
