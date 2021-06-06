@@ -12,7 +12,7 @@ on:
         required: true
       preRelease:
         description: 'Pre-Release'
-        default: false
+        default: 'false'
         required: true
 
 jobs:
@@ -22,6 +22,14 @@ jobs:
     steps:
       - name: Chekout
         uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Generate Files Index
+        run: python gen_files_index.py
       
       - name: Create Release
         id: create_release
@@ -33,3 +41,14 @@ jobs:
           release_name: ${{ github.event.inputs.version }} (for ${{ github.event.inputs.gameVersion }}-LIVE)
           draft: false
           prerelease: ${{ github.event.inputs.preRelease }}
+          
+      - name: Upload Release Files Index
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./index.txt
+          asset_name: index.txt
+          asset_content_type: application/zip
