@@ -8,7 +8,7 @@ on:
         required: true
       refBranch:
         description: 'Reference branch'
-        default: 'original/3_13_1'
+        default: 'original/3_14_0'
         required: true
       commitMsg:
         description: 'Commit message'
@@ -26,8 +26,9 @@ jobs:
     env:
       Language_Id: 25
       Language_Name: russian
-      Global_Ini_Id: a19606700b5283084f52f50b
+      Global_Ini_Id: a695b82e89b843e97ec1c2c8
       Names_Ini_Id: 8bc26b35e3c083b115fb5b66
+      Garbage_Ini_Id: 8a01045989b843734361f6b7
 
     steps:
     - name: Configure git settings
@@ -61,13 +62,22 @@ jobs:
         language_id: ${{ env.Language_Id }}
         filename: names.ini.xlsx
 
+    - name: Export SmartCAT names.ini
+      uses: defterai/smartcat-export@master
+      with:
+        account_id: ${{ secrets.SMARTCAT_ACCOUNT_ID }}
+        auth_key: ${{ secrets.SMARTCAT_API_KEY }}
+        document_id: ${{ env.Garbage_Ini_Id }}
+        language_id: ${{ env.Language_Id }}
+        filename: garbage.ini.xlsx
+        
     - name: Download reference ini
       run: wget https://raw.githubusercontent.com/defterai/StarCitizenModding/${{ github.event.inputs.refBranch }}/data/Localization/english/global.ini -O global_ref.ini 
 
     - name: Merge with latest version
       uses: defterai/sc-localization-merge@master
       with:
-        documents: global.ini names.ini
+        documents: global.ini names.ini garbage.ini
         reference: global_ref.ini
         version: ${{ github.event.inputs.version }}
 
