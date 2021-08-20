@@ -5,7 +5,7 @@
 [![Total Downloads](https://img.shields.io/github/downloads/n1ghter/SC_ru/total.svg)](https://github.com/n1ghter/SC_ru/releases)
 
 Эта модификация добавляет поддержку русского языка в игру сделанного силами сообщества "Star Citizen на русском"  
-Если вы нашли какие-то ошибки в переводе просьба обращатся в дискорд сообщества: https://discord.gg/swhtXGX
+Если вы нашли какие-то ошибки в переводе просьба обращатся в дискорд сообщества: https://discord.gg/8U45k2CkE4
 
 ## Установка
 
