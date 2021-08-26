@@ -4,19 +4,16 @@
 [![Latest Release Downloads](https://img.shields.io/github/downloads/n1ghter/SC_ru/latest/total)](https://github.com/n1ghter/SC_ru/releases/latest)
 [![Total Downloads](https://img.shields.io/github/downloads/n1ghter/SC_ru/total.svg)](https://github.com/n1ghter/SC_ru/releases)
 
-Эта модификация добавляет поддержку русского языка в игру сделанного силами сообщества "Star Citizen на русском"  
-Если вы нашли какие-то ошибки в переводе просьба обращатся в дискорд сообщества: https://discord.gg/8U45k2CkE4
+Эта модификация создана силами сообщества «Star Citizen на русском» и добавляет в игру поддержку русского языка.  
+С любыми вопросами касательно локализации вы можете обратиться в наш дискорд: https://discord.gg/8U45k2CkE4 (раздел Локализация) 
 
-## Установка
+### Приложения для установки и обновления
 
-### Для обычных пользователей
-
-Приложения для установки и обновления:
-* https://github.com/h0useRus/StarCitizen
-* https://github.com/Shin0by/StarCitizen-Helper
+* [SCTools](https://github.com/h0useRus/StarCitizen) от h0use - [последняя версия](https://github.com/h0useRus/StarCitizen/releases/latest)
+* [StarCitizen Helper](https://github.com/Shin0by/StarCitizen-Helper) от Shin0by - [последняя версия](https://github.com/Shin0by/StarCitizen-Helper/releases/latest)
 
 ### Для продвинутых пользователей
 
-Для установки и обновления скачанной локализации вы можете использовать напрямую git и Python скрипты
+Для установки и обновления скачанной локализации вы можете использовать напрямую git и Python скрипты.  
 Подробнее о этом методе установки вы можете узнать из инструкции по ссылке:  
 * https://github.com/defterai/StarCitizenModding
