@@ -1,5 +1,4 @@
 # Локализация Star Citizen на русский язык
-
 Эта модификация создана силами сообщества «Star Citizen на русском» и добавляет в игру поддержку русского языка.  
 
 ### Приложения для установки и обновления
@@ -13,6 +12,12 @@
 [![Total Downloads](https://img.shields.io/github/downloads/n1ghter/StarCitizenRu/total.svg)](https://github.com/n1ghter/StarCitizenRu/releases) - сколько всего раз скачали локализацию только через утилиту Star Citizen Tools с момента подсчёта скачиваний  
 [![Latest Release Downloads](https://img.shields.io/github/downloads/n1ghter/StarCitizenRu/latest/total)](https://github.com/n1ghter/StarCitizenRu/releases/latest) - сколько раз скачали именно последнюю версию только через утилиту Star Citizen Tools  
 [![Latest Release Version](https://img.shields.io/github/release/n1ghter/StarCitizenRu?sort=date)](https://github.com/n1ghter/StarCitizenRu/releases/latest) - номер последней версии  
+
+### Альтернативный вариант для продвинутых пользователей
+
+Для установки и обновления скачанной локализации вы можете использовать напрямую git и Python скрипты.  
+Подробнее о этом методе установки вы можете узнать из инструкции по ссылке:  
+* https://github.com/defterai/StarCitizenModding
 
 ### Теги для лучшей находимости в поисковиках
 star citizen локализация, star citizen русская локализация, star citizen локализация на русском, 
@@ -33,10 +38,4 @@ star citizen русификатор, star citizen ru, star citizen ру, star ci
 локализация стар ситизен, русская локализация стар ситизен, локализация на русском стар ситизен, 
 перевод стар ситизен, русский перевод стар ситизен, перевод на русский стар ситизен, 
 русский стар ситизен, русский язык стар ситизен, язык русский стар ситизен, на русском стар ситизен, 
-русификатор стар ситизен, ru стар ситизен, ситизен русский, 
-
-### Альтернативный вариант для продвинутых пользователей
-
-Для установки и обновления скачанной локализации вы можете использовать напрямую git и Python скрипты.  
-Подробнее о этом методе установки вы можете узнать из инструкции по ссылке:  
-* https://github.com/defterai/StarCitizenModding
+русификатор стар ситизен, ru стар ситизен, ситизен русский
