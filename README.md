@@ -9,8 +9,8 @@
 
 ### Приложения для установки и обновления
 
-* [SCTools](https://github.com/h0useRus/StarCitizen) от h0use - [последняя версия](https://github.com/h0useRus/StarCitizen/releases/latest)
-* [StarCitizen Helper](https://github.com/Shin0by/StarCitizen-Helper) от Shin0by - [последняя версия](https://github.com/Shin0by/StarCitizen-Helper/releases/latest)
+* [Star Citizen Tools](https://github.com/h0useRus/StarCitizen) от h0use - [последняя версия](https://github.com/h0useRus/StarCitizen/releases/latest)
+* [Star Citizen Helper](https://github.com/Shin0by/StarCitizen-Helper) от Shin0by - [последняя версия](https://github.com/Shin0by/StarCitizen-Helper/releases/latest)
 
 ### Для продвинутых пользователей
 
