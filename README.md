@@ -18,7 +18,7 @@
 Подробнее о этом методе установки вы можете узнать из инструкции по ссылке:  
 * https://github.com/defterai/StarCitizenModding
 
-Теги для лучшей находимости в поисковиках:
+### Теги для лучшей находимости в поисковиках
 star citizen локализация, star citizen русская локализация, star citizen локализация на русском, 
 star citizen перевод, star citizen русский перевод, star citizen перевод на русский, 
 star citizen русский, star citizen русский язык, star citizen язык русский, star citizen на русском, 
