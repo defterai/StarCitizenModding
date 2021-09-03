@@ -1,19 +1,14 @@
 # Локализация Star Citizen на русский язык
 
 Эта модификация создана силами сообщества «Star Citizen на русском» и добавляет в игру поддержку русского языка.  
-По любым вопросам вы можете обратиться на общем публичном Discord сервере русскоязычного сообщества в разделе **Локализация**: https://discord.gg/8U45k2CkE4  
-![Раздел по локализации на Discord сервере «Star Citizen на русском»](https://media.discordapp.net/attachments/291284444810182656/883382193370595328/unknown.png)
 
 ### Приложения для установки и обновления
 
 * [Star Citizen Tools](https://github.com/h0useRus/StarCitizen) от h0use: [скачать последнюю версию](https://github.com/h0useRus/StarCitizen/releases/latest)
 * [Star Citizen Helper](https://github.com/Shin0by/StarCitizen-Helper) от Shin0by: [скачать последнюю версию](https://github.com/Shin0by/StarCitizen-Helper/releases/latest)
-
-### Для продвинутых пользователей
-
-Для установки и обновления скачанной локализации вы можете использовать напрямую git и Python скрипты.  
-Подробнее о этом методе установки вы можете узнать из инструкции по ссылке:  
-* https://github.com/defterai/StarCitizenModding
+* 
+По любым вопросам вы можете обратиться на общем публичном Discord сервере русскоязычного сообщества в разделе **Локализация**: https://discord.gg/8U45k2CkE4  
+![Раздел по локализации на Discord сервере «Star Citizen на русском»](https://media.discordapp.net/attachments/291284444810182656/883382193370595328/unknown.png)
 
 [![Total Downloads](https://img.shields.io/github/downloads/n1ghter/StarCitizenRu/total.svg)](https://github.com/n1ghter/StarCitizenRu/releases) - сколько всего раз скачали локализацию только через утилиту Star Citizen Tools с момента подсчёта скачиваний  
 [![Latest Release Downloads](https://img.shields.io/github/downloads/n1ghter/StarCitizenRu/latest/total)](https://github.com/n1ghter/StarCitizenRu/releases/latest) - сколько раз скачали именно последнюю версию только через утилиту Star Citizen Tools  
@@ -39,3 +34,9 @@ star citizen русификатор, star citizen ru, star citizen ру, star ci
 перевод стар ситизен, русский перевод стар ситизен, перевод на русский стар ситизен, 
 русский стар ситизен, русский язык стар ситизен, язык русский стар ситизен, на русском стар ситизен, 
 русификатор стар ситизен, ru стар ситизен, ситизен русский, 
+
+### Альтернативный вариант для продвинутых пользователей
+
+Для установки и обновления скачанной локализации вы можете использовать напрямую git и Python скрипты.  
+Подробнее о этом методе установки вы можете узнать из инструкции по ссылке:  
+* https://github.com/defterai/StarCitizenModding
