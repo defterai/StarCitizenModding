@@ -1,8 +1,8 @@
 # Локализация Star Citizen на русский язык
 
-Последняя версия: [![Latest Release Version](https://img.shields.io/github/release/n1ghter/Star_Citizen_Ru?sort=date)](https://github.com/n1ghter/Star_Citizen_Ru/releases/latest)  
-Сколько раз скачали напрямую (не через утилиты) последнюю версию: [![Latest Release Downloads](https://img.shields.io/github/downloads/n1ghter/Star_Citizen_Ru/latest/total)](https://github.com/n1ghter/Star_Citizen_Ru/releases/latest)  
-Сколько всего раз скачали напрямую (не через утилиты): [![Total Downloads](https://img.shields.io/github/downloads/n1ghter/Star_Citizen_Ru/total.svg)](https://github.com/n1ghter/Star_Citizen_Ru/releases)  
+[![Latest Release Version](https://img.shields.io/github/release/n1ghter/Star_Citizen_Ru?sort=date)](https://github.com/n1ghter/Star_Citizen_Ru/releases/latest) - номер последней версии:   
+[![Latest Release Downloads](https://img.shields.io/github/downloads/n1ghter/Star_Citizen_Ru/latest/total)](https://github.com/n1ghter/Star_Citizen_Ru/releases/latest) - сколько раз скачали напрямую (не через утилиты) последнюю версию  
+[![Total Downloads](https://img.shields.io/github/downloads/n1ghter/Star_Citizen_Ru/total.svg)](https://github.com/n1ghter/Star_Citizen_Ru/releases) - сколько всего раз скачали напрямую (не через утилиты)  
 
 Эта модификация создана силами сообщества «Star Citizen на русском» и добавляет в игру поддержку русского языка.  
 С любыми вопросами касательно локализации вы можете обратиться в наш дискорд: https://discord.gg/8U45k2CkE4 (раздел Локализация) 
