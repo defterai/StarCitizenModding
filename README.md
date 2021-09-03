@@ -9,7 +9,7 @@
 По любым вопросам вы можете обратиться на общем публичном Discord сервере русскоязычного сообщества: https://discord.gg/8U45k2CkE4  
 ![Раздел по локализации на Discord сервере «Star Citizen на русском»](https://media.discordapp.net/attachments/291284444810182656/883382193370595328/unknown.png)
 
-[![Total Downloads](https://img.shields.io/github/downloads/n1ghter/StarCitizenRu/total.svg)](https://github.com/n1ghter/StarCitizenRu/releases) - сколько всего раз скачали локализацию через утилиту Star Citizen Tools с момента подсчёта скачиваний  
+[![Total Downloads](https://img.shields.io/github/downloads/n1ghter/StarCitizenRu/total.svg)](https://github.com/n1ghter/StarCitizenRu/releases) - сколько всего раз скачали локализацию через утилиту Star Citizen Tools с момента начала подсчёта скачиваний  
 [![Latest Release Downloads](https://img.shields.io/github/downloads/n1ghter/StarCitizenRu/latest/total)](https://github.com/n1ghter/StarCitizenRu/releases/latest) - сколько раз скачали именно последнюю версию только через утилиту Star Citizen Tools  
 [![Latest Release Version](https://img.shields.io/github/release/n1ghter/StarCitizenRu?sort=date)](https://github.com/n1ghter/StarCitizenRu/releases/latest) - номер последней версии  
 
