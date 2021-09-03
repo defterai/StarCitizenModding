@@ -6,8 +6,7 @@
 * [Star Citizen Tools](https://github.com/h0useRus/StarCitizen) от h0use: [скачать последнюю версию](https://github.com/h0useRus/StarCitizen/releases/latest)
 * [Star Citizen Helper](https://github.com/Shin0by/StarCitizen-Helper) от Shin0by: [скачать последнюю версию](https://github.com/Shin0by/StarCitizen-Helper/releases/latest)
 
-По любым вопросам вы можете обратиться на общем публичном Discord сервере русскоязычного сообщества в разделе **Локализация**: https://discord.gg/8U45k2CkE4  
-![Раздел по локализации на Discord сервере «Star Citizen на русском»](https://media.discordapp.net/attachments/291284444810182656/883382193370595328/unknown.png)
+![Раздел по локализации на Discord сервере «Star Citizen на русском»](https://media.discordapp.net/attachments/291284444810182656/883382193370595328/unknown.png)По любым вопросам вы можете обратиться на общем публичном Discord сервере русскоязычного сообщества в разделе **Локализация**: https://discord.gg/8U45k2CkE4  
 
 [![Total Downloads](https://img.shields.io/github/downloads/n1ghter/StarCitizenRu/total.svg)](https://github.com/n1ghter/StarCitizenRu/releases) - сколько всего раз скачали локализацию только через утилиту Star Citizen Tools с момента подсчёта скачиваний  
 [![Latest Release Downloads](https://img.shields.io/github/downloads/n1ghter/StarCitizenRu/latest/total)](https://github.com/n1ghter/StarCitizenRu/releases/latest) - сколько раз скачали именно последнюю версию только через утилиту Star Citizen Tools  
