@@ -4,6 +4,8 @@
 # Локализация Star Citizen на русский язык
 Эта модификация создана силами сообщества «Star Citizen на русском» и добавляет в игру поддержку русского языка.  
 
+Так же доступна [локализация Star Citizen на русский язык с сохранением оригинальных английских названий](https://github.com/budukratok/SC_not_so_ru)
+
 ### Приложения для установки и обновления
 
 * [Star Citizen Tools](https://github.com/h0useRus/StarCitizen) от h0use: [скачать последнюю версию](https://github.com/h0useRus/StarCitizen/releases/latest)
