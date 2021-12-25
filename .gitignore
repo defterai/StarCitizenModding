@@ -6,9 +6,11 @@
 /loginData.json
 /.LooseFiles.txt
 /user.cfg
+/*.exe
 /*.log
 /*.pyc
 /Bin64
+/EasyAntiCheat
 /Tools
 /USER
 /screenshots
