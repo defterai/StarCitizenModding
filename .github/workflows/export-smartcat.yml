@@ -8,7 +8,7 @@ on:
         required: true
       refBranch:
         description: 'Reference branch'
-        default: 'original/3_15_0'
+        default: 'original/3_16_0'
         required: true
       commitMsg:
         description: 'Commit message'
@@ -26,9 +26,9 @@ jobs:
     env:
       Language_Id: 25
       Language_Name: russian
-      Global_Ini_Id: e99d31b6cf18c3665ebc4aae
+      Global_Ini_Id: bc78ef5f43b1c37532ff3c6f
       Names_Ini_Id: ab5505445718c3ec6518eb00
-      Garbage_Ini_Id: f056eb356f18c320335cb24a
+      Garbage_Ini_Id: f127c83cee5cc3016ce6cc20
 
     steps:
     - name: Configure git settings
