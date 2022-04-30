@@ -3,7 +3,9 @@
 /c_hiload_crash_handler.id
 /f_win_game_client_release.id
 /build_manifest.id
+/launcherData.json
 /loginData.json
+/profiles.json
 /.LooseFiles.txt
 /user.cfg
 /*.log
@@ -18,3 +20,4 @@
 /data/timestamp
 /EasyAntiCheat
 /StarCitizen_Launcher.exe
+/logs
