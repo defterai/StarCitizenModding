@@ -8,7 +8,7 @@ on:
         required: true
       refBranch:
         description: 'Reference branch'
-        default: 'original/3_16_0'
+        default: 'original/3_17_1'
         required: true
       commitMsg:
         description: 'Commit message'
@@ -26,9 +26,10 @@ jobs:
     env:
       Language_Id: 25
       Language_Name: russian
-      Global_Ini_Id: bc78ef5f43b1c37532ff3c6f
-      Names_Ini_Id: ab5505445718c3ec6518eb00
-      Garbage_Ini_Id: f127c83cee5cc3016ce6cc20
+      Global_Ini_Id: 9daaaebd2228a3ba19877ac5
+      Names_Ini_Id: b84443ffc228a38d7aa26e11
+      Subtitles_Ini_Id: cc4443ffc228a38d7aa26e11
+      Garbage_Ini_Id: d69023dac228a3c73b6dc31c
 
     steps:
     - name: Configure git settings
@@ -62,7 +63,16 @@ jobs:
         language_id: ${{ env.Language_Id }}
         filename: names.ini.xlsx
 
-    - name: Export SmartCAT names.ini
+    - name: Export SmartCAT subtitles.ini
+      uses: defterai/smartcat-export@master
+      with:
+        account_id: ${{ secrets.SMARTCAT_ACCOUNT_ID }}
+        auth_key: ${{ secrets.SMARTCAT_API_KEY }}
+        document_id: ${{ env.Subtitles_Ini_Id }}
+        language_id: ${{ env.Language_Id }}
+        filename: subtitles.ini.xlsx
+
+    - name: Export SmartCAT garbage.ini
       uses: defterai/smartcat-export@master
       with:
         account_id: ${{ secrets.SMARTCAT_ACCOUNT_ID }}
@@ -70,14 +80,14 @@ jobs:
         document_id: ${{ env.Garbage_Ini_Id }}
         language_id: ${{ env.Language_Id }}
         filename: garbage.ini.xlsx
-        
+
     - name: Download reference ini
       run: wget https://raw.githubusercontent.com/defterai/StarCitizenModding/${{ github.event.inputs.refBranch }}/data/Localization/english/global.ini -O global_ref.ini 
 
     - name: Merge with latest version
       uses: defterai/sc-localization-merge@master
       with:
-        documents: global.ini names.ini garbage.ini
+        documents: global.ini names.ini subtitles.ini garbage.ini
         reference: global_ref.ini
         version: ${{ github.event.inputs.version }}
 
