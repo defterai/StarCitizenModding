@@ -57,9 +57,10 @@ jobs:
       run: wget https://raw.githubusercontent.com/defterai/StarCitizenModding/${{ github.event.inputs.refBranch }}/data/Localization/english/global.ini -O global_ref.ini 
 
     - name: Merge with latest version
-      uses: defterai/sc-localization-merge@master
+      uses: defterai/StarCitizen-LocalizationScripts/multilang-to-ini@main
       with:
-        documents: global.ini names.ini subtitles.ini garbage.ini
+        documents: global.ini.xlsx
+        split_documents: names.ini subtitles.ini garbage.ini
         reference: global_ref.ini
         version: ${{ github.event.inputs.version }}
 
