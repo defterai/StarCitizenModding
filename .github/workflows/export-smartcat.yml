@@ -46,7 +46,7 @@ jobs:
       run: git checkout -b ${{ github.event.inputs.dropBranch }}
     
     - name: Export SmartCAT documents
-      uses: defterai/StarCitizen-LocalizationScripts/smartcat-export@main
+      uses: defterai/StarCitizen-LocalizationScripts/export-smartcat@main
       with:
         account_id: ${{ secrets.SMARTCAT_ACCOUNT_ID }}
         auth_key: ${{ secrets.SMARTCAT_API_KEY }}
