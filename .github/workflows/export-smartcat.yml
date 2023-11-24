@@ -69,8 +69,8 @@ jobs:
 
     - name: Commit changes
       run: |
+        git config --global core.autocrlf false
         git add -u "./data/Localization/${{ env.Language_Name }}/global.ini"
-        git rm --cached "./data/Localization/${{ env.Language_Name }}/global.ini"
         git commit -m "${{ github.event.inputs.commitMsg }}"
 
     - name: Push changes
