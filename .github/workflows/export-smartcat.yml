@@ -65,7 +65,7 @@ jobs:
         version: ${{ github.event.inputs.version }}
 
     - name: Replace localization file
-      run: git mv -f global.ini "./data/Localization/${{ env.Language_Name }}/"
+      run: mv -f global.ini "./data/Localization/${{ env.Language_Name }}/"
 
     - name: Commit changes
       run: |
