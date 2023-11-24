@@ -65,13 +65,13 @@ jobs:
         version: ${{ github.event.inputs.version }}
 
     - name: Replace localization file
-      run: mv -f global.ini "./data/Localization/${{ env.Language_Name }}/"
+      run: git mv -f global.ini "./data/Localization/${{ env.Language_Name }}/"
 
     - name: Commit changes
       run: |
-        git status
         git add -u "./data/Localization/${{ env.Language_Name }}/global.ini"
-        git commit -am "${{ github.event.inputs.commitMsg }}"
+        git rm --cached "./data/Localization/${{ env.Language_Name }}/global.ini"
+        git commit -m "${{ github.event.inputs.commitMsg }}"
 
     - name: Push changes
       uses: ad-m/github-push-action@master
