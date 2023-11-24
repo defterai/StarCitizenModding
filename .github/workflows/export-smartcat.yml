@@ -8,7 +8,7 @@ on:
         required: true
       refBranch:
         description: 'Reference branch'
-        default: 'original/3_17_5'
+        default: 'original/3_21_1'
         required: true
       commitMsg:
         description: 'Commit message'
@@ -26,10 +26,10 @@ jobs:
     env:
       Language_Id: 25
       Language_Name: korean_(south_korea)
-      Global_Ini_Id: ab53303325e6535c4e01ae8c
-      Names_Ini_Id: 8753303325e6535c4e01ae8c
-      Subtitles_Ini_Id: db53303325e6535c4e01ae8c
-      Garbage_Ini_Id: eb53303325e6535c4e01ae8c
+      Global_Ini_Id: d96328af5ef553356888a0fd
+      Names_Ini_Id: f2e30e1a9ef5531142cd7640
+      Subtitles_Ini_Id: fcb36c9b9ef5533c7d6ff01b
+      Garbage_Ini_Id: b71d3ed15ef5537608096ee2
 
     steps:
     - name: Configure git settings
