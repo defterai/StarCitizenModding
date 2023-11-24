@@ -78,3 +78,16 @@ jobs:
       with:
         branch: ${{ github.event.inputs.dropBranch }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+          commit-message: ${{ github.event.inputs.commitMsg }}
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          branch: ${{ github.event.inputs.dropBranch }}
+          delete-branch: true
+          title: 'Daily localization drop'
+          assignees: n1ghter
+          reviewers: n1ghter
+          draft: false
