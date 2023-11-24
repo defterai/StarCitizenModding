@@ -86,6 +86,7 @@ jobs:
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           branch: ${{ github.event.inputs.dropBranch }}
+          base: master
           delete-branch: true
           title: 'Daily localization drop'
           assignees: n1ghter
