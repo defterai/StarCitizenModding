@@ -70,6 +70,7 @@ jobs:
     - name: Commit changes
       run: |
         git status
+        git add "./data/Localization/${{ env.Language_Name }}/global.ini"
         git commit -am "${{ github.event.inputs.commitMsg }}"
 
     - name: Push changes
