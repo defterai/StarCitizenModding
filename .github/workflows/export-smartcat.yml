@@ -59,7 +59,7 @@ jobs:
     - name: Merge with latest version
       uses: defterai/StarCitizen-LocalizationScripts/multilang-to-ini@main
       with:
-        documents: global.ini.xlsx
+        document: global.ini.xlsx
         split_documents: names.ini subtitles.ini garbage.ini
         reference: global_ref.ini
         version: ${{ github.event.inputs.version }}
